@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* cursor: url("/cursor/CliquePERSO.svg") 8 8, auto; */
+}
+* {
+  cursor: url("/cursor/Send_duotone.png") 8 8, auto;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+@font-face {
+  font-family: "Djingo";
+  src: url("/fonts/djingo.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ultravision";
+  src: url("/fonts/UltravisionVF.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Horix";
+  src: url("/fonts/ithorix-regular.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-Djingo: "Djingo", sans-serif;
+  --font-Ultravision: "Ultravision", sans-serif;
+  --font-Horix: "Horix", sans-serif;
+  --font-work: "Work Sans", sans-serif;
+  --color-HoverEffect: #8C8C8;
+  --color-Navcol: #14151d;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body, * {
+  cursor: none !important;
+}
