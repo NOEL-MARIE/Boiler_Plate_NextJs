@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/NavBar";
-import Footer from "./components/Footer";
-import CursorFollower from "./components/CursorCustom";
+// import Footer from "./components/Footer";
+import CursorFollower from "./components/CursorFollower";
+
 // import Background from "./components/Background";
 
 const geistSans = Geist({
@@ -28,11 +29,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={`${geistSans.variable} ${geistMono.variable}`} style={{ backgroundImage: 'url("/assets/bg_morph.png")  '  }}>
-      <CursorFollower />
+
+      <body
+        className={`${geistSans.variable} ${geistMono.variable}`}
+        style={{ backgroundImage: 'url("/assets/bg_morph.png")  ' }}
+      >
+        <CursorFollower />
         <Navbar />
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

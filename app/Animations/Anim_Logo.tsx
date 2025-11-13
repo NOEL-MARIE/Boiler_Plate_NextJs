@@ -54,7 +54,7 @@ export default function AnimatedName({ className = "" }: AnimatedNameProps) {
 
   return (
     <p
-      className={`flex gap-1 items-center cursor-pointer ${className}`}
+      className={`flex gap-1 items-center cursor-pointer font-Sacramento ${className}`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >

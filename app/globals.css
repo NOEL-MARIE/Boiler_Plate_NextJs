@@ -2,6 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+@font-face {
+  font-family: "Sacramento";
+  src: url("/fonts/Sacramento.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "RalewayMedium";
+  src: url("/fonts/Raleway-Medium.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "RobotoSlab";
+  src: url("/fonts/RobotoSlab-Regular.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "RalewayRegular";
+  src: url("/fonts/Raleway-Regular.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+Masquer la scrollbar mais garder le scroll fonctionnel
+html, body {
+  overflow: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; 
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none; 
+}
+
+/* body {
+  @apply bg-black text-white overflow-x-hidden;
+} */
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -28,9 +75,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /* cursor: url("/cursor/CliquePERSO.svg") 8 8, auto; */
 }
-* {
-  cursor: url("/cursor/Send_duotone.png") 8 8, auto;
-}
+
 
 * {
   box-sizing: border-box;
@@ -49,28 +94,6 @@ a {
   }
 }
 
-@font-face {
-  font-family: "Djingo";
-  src: url("/fonts/djingo.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Ultravision";
-  src: url("/fonts/UltravisionVF.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Horix";
-  src: url("/fonts/ithorix-regular.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
 
 @theme {
   --font-Djingo: "Djingo", sans-serif;
@@ -86,6 +109,3 @@ html {
   scroll-behavior: smooth;
 }
 
-body, * {
-  cursor: none !important;
-}
